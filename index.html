@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ELEVATE FITNESS CLUB • Formamos mente y cuerpo</title>
+  <meta name="description" content="Ven a entrenar con nosotros. Formamos mente y cuerpo. Inscripción, tienda de suplementos y galería del gimnasio." />
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-purple fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="logo.jpeg" alt="Logo" width="40" height="40" class="rounded-circle me-2">
+        ELEVATE FITNESS CLUB
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <!-- Orden solicitado: Inscríbete, Tienda, Ofertas, Únete ahora -->
+          <li class="nav-item"><a class="nav-link" href="inscribirme.html">Inscríbete</a></li>
+          <li class="nav-item"><a class="nav-link" href="clases.html">Clases</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertas">Ver ofertas</a></li>
+          <li class="nav-item">
+            <a class="btn btn-success ms-lg-2" href="login.html">¡Únete hoy!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Slider (con desplazamiento + botones) -->
+  <section class="hero-slider" id="inicio" aria-label="Promociones principales">
+    <div class="hero-track">
+      <!-- Slide 1 -->
+      <div class="hero-slide" style="background-image: url('fondo.png');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1 class="display-5 display-md-4 fw-bold">Ven a Bailar con nosotros</h1>
+          <p class="lead">Formamos mente y cuerpo con programas para todos los niveles.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <a href="#ofertas" class="btn btn-success btn-lg">Ver ofertas</a>
+            <a href="#instalaciones" class="btn btn-outline-light btn-lg">Instalaciones</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image: url('cardio.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1 class="display-5 fw-bold">Clases dinámicas</h1>
+          <p class="lead">Danza, Baile para adulto mayor y defensa personal para ti.</p>
+          <a href="#clases" class="btn btn-success btn-lg">Explorar clases</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide" style="background-image: url('foto.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1 class="display-5 fw-bold">Entrenamiento completo</h1>
+          <p class="lead">Mejora tu rendimiento con equipos modernos.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <button class="hero-btn prev" aria-label="Anterior">❮</button>
+    <button class="hero-btn next" aria-label="Siguiente">❯</button>
+  </section>
+
+  <!-- Ofertas / Membresías -->
+  <section class="py-5" id="ofertas">
+    <div class="container">
+      <h2 class="mb-4 text-center">OFERTAS</h2>
+      <div class="row g-4">
+        <!-- Básico -->
+        <div class="col-md-4">
+          <div class="card h-100 plan">
+            <div class="card-body">
+              <h5 class="card-title">PROMOCION hasta el 5 de septiembre</h5>
+              <h6 class="card-subtitle mb-3 text-muted">Bs 90 / mes</h6>
+              <ul class="list-unstyled mb-4">
+                <li>• Ilimitado </li>
+                <li>• Horario (L–V 17:00–21:00)</li>
+                <li>• Todas las especialidades</li>
+              </ul>
+              <a href="login.html" class="btn btn-success w-100">Únete ahora</a>
+            </div>
+          </div>
+        </div>
+        <!-- Estándar -->
+        <div class="col-md-4">
+          <div class="card h-100 plan plan-featured border-success">
+            <div class="card-body">
+              <h5 class="card-title">INSCRIPCION</h5>
+              <h6 class="card-subtitle mb-3 text-muted">Bs 140 / mes</h6>
+              <ul class="list-unstyled mb-4">
+               <li>• Horario (L–V 17:00–21:00)</li>
+                <li>• Todas las especialidades</li>
+              </ul>
+              <a href="login.html" class="btn btn-success w-100">Únete ahora</a>
+            </div>
+          </div>
+        </div>
+        <!-- Premium -->
+        <div class="col-md-4">
+          <div class="card h-100 plan">
+            <div class="card-body">
+              <h5 class="card-title">Alquiler de Sala</h5>
+              <h6 class="card-subtitle mb-3 text-muted">Precio dependiendo el tiempo</h6>
+              <ul class="list-unstyled mb-4">
+                <li>• Por hora- Semanal- Mensual  </li>
+                <li>• Ambiente amplio</li>
+                <li>• Vestidores</li>
+                <li>• Piso Antideslizante</li>
+              </ul>
+              <a href="login.html" class="btn btn-success w-100">Únete ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clases (un solo carrusel, imágenes más pequeñas) -->
+  <section class="py-5 bg-dark text-light" id="clases">
+    <div class="container">
+      <h2 class="mb-4 text-center">Clases disponibles</h2>
+      <div id="carouselClases" class="carousel slide carousel-sm" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img class="w-100 carousel-img-sm" src="baile.jpeg" alt="Danza">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100 carousel-img-sm" src="defensa.jpg" alt="Defensa personal">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100 carousel-img-sm" src="amayor.jpg" alt="Adulto mayor">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClases" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselClases" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Instalaciones (más pequeño) -->
+  <section class="py-5 bg-dark text-light" id="instalaciones">
+    <div class="container">
+      <h2 class="mb-4 text-center">Nuestras instalaciones</h2>
+      <div id="carouselInstalaciones" class="carousel slide carousel-xs" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img class="w-100 carousel-img-xs" src="instalaciones.jpg" alt="Instructores">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100 carousel-img-xs" src="instalacion.jpg" alt="Zumba">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100 carousel-img-xs" src="inst.jpg" alt="Folklore">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstalaciones" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselInstalaciones" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p class="mb-0">© <span id="year"></span> ELEVATE FITNESS CLUB. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>

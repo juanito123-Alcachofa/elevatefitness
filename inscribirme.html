@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción — ELEVATE FITNESS CLUB</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+  <!-- Navbar -->
+    <!-- Navbar principal -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ELEVATE FITNESS CLUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="inscribirme.html">Inscribirse</a></li>
+          <li class="nav-item"><a class="nav-link " href="clases.html">Clases</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario -->
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg form-card" style="background-color:#1a1423; color:#eee;">
+          <div class="card-header text-white" style="background-color:#6c2dc7;">
+            <h4 class="mb-0">Formulario de Inscripción</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label class="form-label">Nombre</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Apellido Paterno</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Apellido Materno</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Edad</label>
+                  <input type="number" class="form-control" min="12" max="100" required>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Peso (kg)</label>
+                  <input type="number" step="0.1" class="form-control" required>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Altura (cm)</label>
+                  <input type="number" class="form-control" required>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Género</label>
+                  <select class="form-select" required>
+                    <option value="">Seleccionar...</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Repetir contraseña</label>
+                  <input type="password" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Objetivo</label>
+                  <select class="form-select">
+                    <option>Perder peso</option>
+                    <option>Aprender a bailar</option>
+                    <option>Mejorar resistencia</option>
+                    <option>Salud general</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Observaciones médicas</label>
+                  <textarea class="form-control" rows="3" placeholder="Ejemplo: asma, hipertensión, lesiones previas..."></textarea>
+                </div>
+                <div class="col-12 form-check">
+                  <input class="form-check-input" type="checkbox" id="acepto" required>
+                  <label class="form-check-label" for="acepto">Acepto términos y condiciones</label>
+                </div>
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-purple btn-lg">Enviar inscripción</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark-purple text-light text-center py-3">
+    <p class="mb-0">© <span id="year"></span> ELEVATE FITNESS CLUB — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

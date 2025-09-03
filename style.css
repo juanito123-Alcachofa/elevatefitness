@@ -1,0 +1,192 @@
+/* =========================
+   FUENTE Y COLORES BASE
+   ========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0b14;
+  color: #eee;
+}
+
+.bg-dark-purple,
+.navbar {
+  background-color: #1a1423 !important;
+}
+
+.btn-success {
+  background-color: #6c2dc7;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #571fa3;
+}
+
+/* =========================
+   HERO SLIDER
+   ========================= */
+.hero-slider {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+  margin-top: 64px; /* compensar navbar fija */
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.hero-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+.hero-slide {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.hero-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+.hero-btn:hover { background: rgba(0,0,0,0.65); }
+.hero-btn.prev { left: 16px; }
+.hero-btn.next { right: 16px; }
+
+/* =========================
+   MEMBRESÍAS
+   ========================= */
+.membership-card {
+  background: #fff;        /* Fondo blanco */
+  color: #000;             /* Texto negro */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-8px);
+}
+
+.membership-card h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.membership-card p {
+  color: #333;
+}
+
+/* =========================
+   CAROUSELES PEQUEÑOS
+   ========================= */
+.carousel-sm .carousel-img-sm {
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-xs .carousel-img-xs {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================
+   CLASES POR DÍA
+   ========================= */
+#diasNav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+#diasNav button {
+  background: #1a1423;
+  color: #eee;
+  border: 2px solid #6c2dc7;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#diasNav button:hover {
+  background: #6c2dc7;
+  color: #fff;
+  border-color: #571fa3;
+}
+
+#diasNav button.active {
+  background: #6c2dc7;
+  color: #fff;
+  border-color: #571fa3;
+}
+
+/* Contenedor de imágenes de clases */
+#clasesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#clasesContainer img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 300px;
+  height: 180px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background: #1a1423;
+  color: #bbb;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* =========================
+   UTILIDADES
+   ========================= */
+.display-md-4 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+.bg-light {
+  background-color: #0d0b14 !important;
+}
